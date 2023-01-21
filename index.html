@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-------------------------------------------------------------------->
+  <!---------------------------Nav Bar---------------------------------->
+    <nav>
+      <div class="navbar">
+        <img src="./images/icon-menu.svg" class="menu" id="menu">
+        <img src="./images/logo.svg">
+      <ul class="navList">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      </div>
+      
+      <div class="account">
+        <div class="cartDiv">
+          <div class="cartNumber">
+            <span id="number">0</span>
+          </div>
+          <img src="./images/icon-cart.svg" class="cart">
+        </div>
+          <img src="./images/image-avatar.png" class="avatar" id="avatar">
+      </div>
+
+      <div class="cartItems" id="cartItems">
+        <div class="cartTitle">
+          <h1>Cart</h1>
+        </div>
+
+        <div class="cartItem" id="cartItem">
+          <p id="empty">Your card is empty</p>
+        </div>
+
+      </div>
+    </nav>
+  <!---------------------------------------------------------------------------->
+
+
+
+  <!---------------------------------------------------------------------------->
+  <!---------------------------- Side Bar Section ------------------------------>
+    <div class="sideBar" id="sideBar">
+      <img src="./images/icon-close.svg" id="close">
+      <ul class="navListBar">
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <!--------------------------------------------------------------------------->
+ 
+  
+
+
+  <!---------------------------------------------------------------------------->
+  <!----------------------------------Hero Section------------------------------>
+  <div class="HeroSection">
+    <!------------------------Mobile Images-------------------------------------------------->
+        <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="./images/image-product-1.jpg"></div>
+        <div class="swiper-slide"><img src="./images/image-product-2.jpg"></div>
+        <div class="swiper-slide"><img src="./images/image-product-3.jpg"></div>
+        <div class="swiper-slide"><img src="./images/image-product-4.jpg"></div>
+      </div>
+ 
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <!--------------------------------------------------------------------------------------->
+    <div class="images">
+      <div class="bigImg" id="bigImg">
+        <img src="./images/image-product-1.jpg" id="imgProduct">
+      </div>
+      <div class="imgThumbs" id="imgThumbs">
+        <div class="imgThumb"><img src="./images/image-product-1-thumbnail.jpg" id="imgThumb1"></div>
+        <div class="imgThumb"><img src="./images/image-product-2-thumbnail.jpg" id="imgThumb2"></div>
+        <div class="imgThumb"><img src="./images/image-product-3-thumbnail.jpg" id="imgThumb3"></div>
+        <div class="imgThumb"><img src="./images/image-product-4-thumbnail.jpg" id="imgThumb4"></div>
+      </div>
+    </div>
+
+    <div class="productDesc">
+      <p class="proTitle">Sneaker Company</p>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p class="paraDes">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+      <div class="price">
+        <h2>$<span id="priceTag">125</span>.00<span class="reduction">50%</span></h2>
+        <h3>$250.00</h3>
+      </div>
+      
+      <div class="buttons">
+        <div class="plusMin">
+          <button id="minus"><img src="./images/icon-minus.svg" ></button>
+          <h3><span id="totalItem">1</span></h3>
+          <button id="plus"><img src="./images/icon-plus.svg" ></button>
+        </div>
+        <div class="addto">
+          <button id="addto"><img src="./images/icon-cart.svg"> Add to cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------->
+
+
+
+
+  <!-------------------------------------------------------------------------------->
+  <!---------------------------------Light Box-------------------------------------->
+  <div class="lightbox" id="lightbox">
+
+    <img src="./images/icon-close.svg" id="closeLight" class="closeLight">
+
+    <div class="HeroSection">
+    <div class="images">
+      <div class="bigImg" id="bigImg">
+        <!-- <img src="./images/image-product-1.jpg" id="imgProduct"> -->
+        <div class="swiper light">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./images/image-product-1.jpg" id="imgProduct"></div>
+            <div class="swiper-slide"><img src="./images/image-product-2.jpg" id="imgProduct"></div>
+            <div class="swiper-slide"><img src="./images/image-product-3.jpg" id="imgProduct"></div>
+            <div class="swiper-slide"><img src="./images/image-product-4.jpg" id="imgProduct"></div>
+            ...
+          </div>
+     
+    
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <!-- <div class="imgThumbs" id="imgThumbs">
+        <div class="imgThumb"><img src="./images/image-product-1-thumbnail.jpg" id="imgThumb1"></div>
+        <div class="imgThumb"><img src="./images/image-product-2-thumbnail.jpg" id="imgThumb2"></div>
+        <div class="imgThumb"><img src="./images/image-product-3-thumbnail.jpg" id="imgThumb3"></div>
+        <div class="imgThumb"><img src="./images/image-product-4-thumbnail.jpg" id="imgThumb4"></div>
+      </div> -->
+    </div>
+    </div>
+    
+
+  </div>
+  <!-------------------------------------------------------------------------------->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ayman El ouahabi</a>.
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>  
+</body>
+</html>
